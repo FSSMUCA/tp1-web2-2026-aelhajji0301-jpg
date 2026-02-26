@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+
+    <h1>Exercice 4 </h1>
+    
+
+    <script>
+        
+        let prenom = prompt("Quel est votre prénom ?");
+
+        
+        let ageSaisi = prompt("Quel est votre âge ?");
+
+        
+        let age = Number(ageSaisi);
+
+        
+        let anneeNaissance = 2025 - age;
+
+        
+        alert(`Bonjour ${prenom} ! Vous êtes né(e) vers ${anneeNaissance}.`);
+
+        
+        let confirmation = confirm("Afficher dans la console ?");
+
+        
+        if (confirmation) {
+            console.log("Détails utilisateur :");
+            console.log("- Prénom :", prenom);
+            console.log("- Âge :", age);
+            console.log("- Année de naissance estimée :", anneeNaissance);
+        }
+    </script>
+
+</body>
+</html>
